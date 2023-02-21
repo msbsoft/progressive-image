@@ -23,7 +23,7 @@ const ProgressiveImage = ({placeholderImageSrc, imageSrc, ...props}:ProgressiveI
     return (
         <img
             src={src}
-            className={isLoading ? styles.blurred : styles.visible}
+            className={isLoading ? styles.loading : styles.loaded}
             {...props}          
         />
     )

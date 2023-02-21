@@ -1,7 +1,9 @@
-.blurred {
-    opacity: .2;
+.loading {
+    filter: blur(10px);
+    clip-path: inset(0);
 }
 
-.visible {
-    opacity: 1;
+.loaded {
+    filter: blur(0px);
+    transition: filter 0.8s linear 4s;
 }
